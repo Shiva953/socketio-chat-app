@@ -5,6 +5,162 @@ body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; 
 }
 
+.top-heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('./effect.gif');
+    mix-blend-mode:difference;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(57, 247, 222, 0.5);
+    font-family: "Pixel NES";
+    color:#19ff4f;
+    font-size: 4rem;
+    letter-spacing: 0.1rem;
+    animation: text-flicker 0.001s linear infinite;
+}
+
+#offset {
+    animation: letter-flicker 5s linear infinite;
+  }
+  
+  @keyframes text-flicker {
+    0% {
+      opacity:0.1;
+      text-shadow: 0px 0px 29px rgb(45, 189, 120);
+    }
+    
+    2% {
+      opacity:1;
+      text-shadow: 0px 0px 29px rgb(45, 189, 120);
+    }
+    8% {
+      opacity:0.1;
+      text-shadow: 0px 0px 29px rgb(45, 189, 120);
+    }
+    9% {
+      opacity:1;
+      text-shadow: 0px 0px 29px rgb(45, 189, 120);
+    }
+    12% {
+      opacity:0.1;
+      text-shadow: 0px 0px rgb(45, 189, 120);
+    }
+    20% {
+      opacity:1;
+      text-shadow: 0px 0px 29px rgb(45, 189, 120)
+    }
+    25% {
+      opacity:0.3;
+      text-shadow: 0px 0px 29px rgb(45, 189, 120)
+    }
+    30% {
+      opacity:1;
+      text-shadow: 0px 0px 29px rgb(45, 189, 120)
+    }
+    
+    70% {
+      opacity:0.7;
+      text-shadow: 0px 0px 29px rgb(45, 189, 120)
+    }
+    
+    72% {
+      opacity:0.2;
+      text-shadow:0px 0px 29px rgb(45, 189, 120)
+    }
+    
+    77% {
+      opacity:.9;
+      text-shadow: 0px 0px 29px rgb(45, 189, 120)
+    }
+    100% {
+      opacity:.9;
+      text-shadow: 0px 0px 29px rgb(45, 189, 120)
+    }
+  }
+  
+  /* @keyframes border-flicker {
+    0% {
+      opacity:0.1;
+      -webkit-box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
+  -moz-box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
+  box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
+    }
+    2% {
+      opacity:1;
+      -webkit-box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
+  -moz-box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
+  box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
+    }
+    4% {
+      opacity:0.1;
+      -webkit-box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
+  -moz-box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
+  box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
+    }
+    
+    8% {
+      opacity:1;
+      -webkit-box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
+  -moz-box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
+  box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
+    }
+    70% {
+      opacity:0.7;
+      -webkit-box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
+  -moz-box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
+  box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
+    }
+    100% {
+      opacity:1;
+      -webkit-box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
+  -moz-box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
+  box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
+    }
+  } */
+  
+  @keyframes letter-flicker {
+    0% {
+      opacity:0.1;
+      text-shadow: 0px 0px 29px rgb(45, 189, 120);
+    }
+    2% {
+      opacity:0.1;
+      text-shadow: 0px 0px 29px rgb(45, 189, 120);
+    }
+    4% {
+      opacity:1;
+      text-shadow: 0px 0px 29px rgb(45, 189, 120);
+    }
+    
+    
+    19% {
+      opacity:1;
+      text-shadow: 0px 0px 29px rgb(45, 189, 120);
+    }
+    21% {
+      opacity:0.1;
+      text-shadow: 0px 0px 29px rgb(45, 189, 120);
+    }
+    23% {
+      opacity:1;
+      text-shadow: 0px 0px 29px rgb(45, 189, 120);
+    }
+    
+    80% {
+      opacity:1;
+      text-shadow: 0px 0px 29px rgb(45, 189, 120);
+    }
+    83% {
+      opacity:0.4;
+      text-shadow: 0px 0px 29px rgb(45, 189, 120);
+    }
+    87% {
+      opacity:1;
+      text-shadow: 0px 0px 29px rgb(45, 189, 120);
+    }
+  }
+
 #form{
     background: rgba(0, 0, 0, 0.15); 
     padding: 0.25rem; 
@@ -52,6 +208,7 @@ body {
     color: rgb(32, 255, 188);
     font-family: "MS UI Gothic","Px437 CompaqThin 8x14","OPTIRussian-Gothic", Tahoma;
     text-shadow: 0 0 10px rgba(0, 255, 132, 0.837);
+    opacity: 0.8;
 }
 
 .message {
