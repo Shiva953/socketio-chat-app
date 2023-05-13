@@ -66,7 +66,6 @@ io.on('connection', (socket) => { //ESTABLISHING A CONNECTION
     });
   });
 
-//FEATURES TO BE ADDED
 
 const port = 3000
 server.listen(port, () => {
