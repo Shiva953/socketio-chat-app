@@ -6,6 +6,7 @@ body {
 }
 
 .top-heading{
+    position:sticky;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -16,7 +17,8 @@ body {
     font-family: "Pixel NES";
     color:#19ff4f;
     font-size: 4rem;
-    letter-spacing: 0.1rem;
+    border: 2px solid #128179;
+    letter-spacing: -0.2rem;
     animation: text-flicker 0.001s linear infinite;
 }
 
