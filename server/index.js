@@ -1,7 +1,7 @@
 const express = require('express')
 const app = express();
 const http = require('http');
-const server = http.createServer(app); //creating a http server using express
+const server = http.createServer(app); //creating a http server node and using express
 
 //wrapping the http server to upgrade it to support websocket communication(which would listen for multiple users)
 const { Server } = require("socket.io");
